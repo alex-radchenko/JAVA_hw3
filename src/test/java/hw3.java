@@ -1,19 +1,12 @@
 import static com.codeborne.selenide.Selectors.byText;
-import com.codeborne.selenide.Configuration;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.text;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
 public class hw3 {
-    @BeforeEach
-    public void setUp() {
-        Configuration.browser = "chrome";
-        Configuration.headless = false;
-    }
     @Test
-    void Github() {
+    void gitHub() {
         open("https://github.com/");
         $("input[placeholder='Search GitHub']").val("Selenide").pressEnter();
         $x("//a[@href='/selenide/selenide']").click();
