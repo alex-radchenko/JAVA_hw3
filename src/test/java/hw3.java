@@ -1,4 +1,3 @@
-package hw.hw3;
 import static com.codeborne.selenide.Selectors.byText;
 import com.codeborne.selenide.Configuration;
 import static com.codeborne.selenide.Selenide.*;
